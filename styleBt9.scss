@@ -1,0 +1,480 @@
+@import'reset';
+
+
+
+.container{
+    width: 1150px;
+    margin: 0px auto;
+}
+.bg-grey{
+    background: rgba(grey,0.07);
+}
+header{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            margin: 30px 0px;
+            >i{
+                font-size: 18px;
+            }
+        }
+        .menu{
+            margin: 30px;
+            > a{
+                margin: 10px;
+                color: black;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+        .connect{
+            margin: 20px;
+            > i{
+                margin: 10px;
+            }
+        }
+    }
+    border-bottom:1px solid  rgba(grey,0.2);
+    box-shadow:0px 0px 10px 0px rgba(grey,0.5);
+}
+.title{
+    padding-top: 10px;
+    font-size: 20px;
+    color:  rgb(250, 75, 42);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.information{
+    padding-top: 10px;
+    font-size: 16px;
+    color:  black;
+    font-family: Raleway, sans-serif;
+    font-weight: 100;
+    span{
+        color: rgb(250, 75, 42);
+    }
+}
+.describe{
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgba(black,0.5);
+    font-family: Raleway, sans-serif;
+    font-weight: 100;
+    line-height: 28px;
+}
+.more{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    .node{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        border-radius: 1px;
+        color: white;
+        width: 160px;
+        height: 35px;
+        background: rgb(250, 75, 42);
+        font-family: Raleway, sans-serif;
+        &:hover{
+            background: black;
+        }
+    }
+    .connect{
+        display: flex;
+        justify-content: flex-end;
+        > i{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            color: cornflowerblue;
+            border: 1px solid rgba(grey,0.2);
+        }
+        &:hover{
+            animation-name: i;
+            animation-duration: 5s;
+            animation-iteration-count: 3;//số lần thực hiện 1 animation
+            animation-delay:0.9s;//độ trễ cũa mỗi lượt chuyển động
+            animation-direction: normal;
+            animation-timing-function:linear;//tốc độ chuyển động từ đầu cuối = nhau
+        }
+    }
+}
+main{
+    .first-main{    
+        .bg-grey{
+            .container{
+                .title{
+                    padding-top: 20px;
+                    font-size: 50px;
+                    display: flex;
+                    justify-content: center;
+                    color: black;
+                    font-weight: 100;
+                }
+                .slogan{
+                    display: flex;
+                    justify-content: center;
+                    > div{
+                        height: 2px;
+                        width: 80px;
+                        background: black;
+                        display: flex;
+                        align-items: center;
+                        margin: 12px 10px;
+                    }
+                    > h3{
+                        color: rgb(250, 75, 42);
+                        margin-top: 5px;
+                        font-weight: 100;
+                        font-size: 15px;
+                    }
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        .bg-img{
+            background-image: url("http://202.182.100.160:3333/images/banner-1.jpg");
+            background-color: grey;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            .container{
+                .title{
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                    font-weight: 100;
+                    font-size: 45px;
+                }
+                .detail{
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.46);
+                    font-size: 20px;
+                    line-height: 38px;
+                    width: 70%;
+                    margin-left: 15%;
+                    font-family: "Open Sans", sans-serif;
+                }
+                .node{
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    > a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 17px;
+                        border-radius: 1px;
+                        color: white;
+                        width: 160px;
+                        height: 45px;
+                        background: rgb(250, 75, 42);
+                        &:hover{
+                            background: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .second-main{
+        .bg-grey{
+            .container{
+                .content{
+                    .selection{
+                        display: flex;
+                        justify-content: space-around;
+                        .title{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #016773;
+                            border: 1px solid #ddd;
+                            font-size: 16px;
+                            font-weight: 600;
+                            height: 50px;
+                            width: 100%;
+                            transition: border-bottom 0.9s;
+                            &:hover{
+                                background: white;
+                                border-bottom: 3px solid red;
+                            }
+                        }
+                    }
+                    .picture-show{
+                        margin-top: 40px;
+                        display: flex;
+                        justify-content: space-around;
+                        padding-bottom: 100px;
+                    }
+                }
+            }
+        }
+    }
+    .third-main{
+        .bg-grey{
+            .container{
+                .content{
+                    display: flex;
+                    justify-content: space-between;
+                    .left-content{
+                        .first-detail{
+                            background: white;
+                            padding: 30px;
+                            .title{
+                                margin-bottom: 10px;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                        }
+                        .second-detail{
+                            margin-top: 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            background: white;
+                            padding: 30px;
+                            .title{
+                                margin-bottom: 10px;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                            > div{
+                                .describe{
+                                    margin-right: 10px;
+                                }
+                                .more{
+                                    margin-right: 25px;
+                                }
+                                
+                            }
+                        }
+                        .third-detail{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 20px;
+                            padding: 30px;
+                            background: white;
+                            .title{
+                                margin-bottom: 10px;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                            img{
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+                    .right-content{
+                        margin-left: 15px;
+                        background: white;
+                        padding: 30px;
+                        height: 50%;
+                        .detail-content{
+                            > form{
+                                position: relative;
+                                > input{
+                                    height: 30px;
+                                    width: 200px;
+                                    border: 1px solid black;
+                                    color: rgba(black,0.7);
+                                    padding: 5px 10px;
+                                    letter-spacing: 2px;
+                                }
+                                > span{
+                                    > i{
+                                        position: absolute;
+                                        width: 30px;
+                                        height: 30px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-top: 1px solid black;
+                                        border-right: 1px solid black;
+                                        border-bottom: 1px solid black;
+                                        color: cornflowerblue;
+                                        right: 35px;
+                                        top: 0px;
+                                    }
+                                }
+                            }
+                            .title{
+                                margin-top: 20px;
+                                margin-bottom: 10px;
+                            }
+                            .flex-start{
+                                margin-top: 20px;
+                                padding-bottom: 20px;//để tạo khoảng cách vẽ border
+                                display: flex;
+                                justify-content: flex-start;
+                                > img{
+                                    width: 30%;
+                                    height: 20%;
+                                }
+                                .name{
+                                    margin-left: 15px;
+                                    font-family: Raleway, sans-serif;
+                                    font-size: 16px;
+                                    color: rgba(black,0.6);
+                                    width: 150px;
+                                    display: flex;
+                                    align-items: center;
+                                    line-height: 30px;
+                                }
+                            }
+                            .bor-bot-dotted{
+                                border-bottom: 1px dotted grey;
+                            }
+                            .title{
+                                font-weight: 700;
+                            }
+                            .sp-between{
+                                display: flex;
+                                justify-content: space-between;
+                                >img{
+                                    margin-top: 10px;
+                                    width: 30%;
+                                    height: auto;
+                                }
+                            }
+                            .describe{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.bor-bot-solid{
+    border-bottom: 1px solid white;
+}
+footer{
+    .bg-black-08{
+        background: rgba(black,0.8);
+        padding-bottom: 40px;
+        .container{
+            .footer-content{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 40px;
+                .firts-content{
+                    margin-right: 30px;
+                    .title{
+                        padding-bottom: 30px;
+                        color: white;
+                        font-size: 26px;
+                        font-family: Raleway, sans-serif;
+                        margin-top: 15px;
+                    }
+
+                    .describe{
+                        color: white;
+                        margin-top: 15px;
+                    }
+                    img{
+                        margin-top: 15px;
+                        width: 100%;
+                        height: auto;
+                    }
+                    .node{
+                        margin-top: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 17px;
+                        border-radius: 1px;
+                        color: white;
+                        width: 140px;
+                        height: 30px;
+                        background: rgb(250, 75, 42);
+                        font-family: Raleway, sans-serif;
+                        &:hover{
+                            background: black;
+                        }
+                    }
+
+                }
+                .second-content{
+                    margin-right: 30px;
+                    .title{
+                        padding-bottom: 30px;
+                        color: white;
+                        font-size: 26px;
+                        font-family: Raleway, sans-serif;
+                        margin-top: 15px;
+                    }
+                    .describe{
+                        margin-top: 15px;
+                        color: white;
+                    }
+                    .address{
+                        color: rgb(250, 75, 42);
+                        margin-top: 15px;
+                        line-height: 28px;
+                        font-family: Raleway, sans-serif;
+                        font-weight: 100;
+                        
+                    }
+                }
+                .third-content{
+                    .title{
+                        padding-bottom: 30px;
+                        color: white;
+                        font-size: 26px;
+                        font-family: Raleway, sans-serif;
+                        margin-top: 15px;
+                        letter-spacing: 2px;
+                    }
+                    .describe{
+                        color: white;
+                        margin-top: 15px;
+                    }
+                    form{
+                        input{
+                            width: 100%;
+                            height: 35px;
+                            margin-bottom: 10px;
+                            color: rgba(black,0.5);
+                            letter-spacing: 2px;
+                        }
+                        .bg-orange{
+                            background: rgb(250, 75, 42);
+                            border: black;
+                            color: white;
+                            &:hover{
+                                background: black;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bg-black{
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+        font-weight: 500;
+        font-size: 15px;
+        font-family: Raleway, sans-serif;
+    }
+}
